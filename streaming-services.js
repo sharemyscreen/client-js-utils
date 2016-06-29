@@ -35,7 +35,7 @@ class StreamingServices {
     }
 
     private run_message_handler() {
-        socket.on('message', function(message) {
+        this.socket.on('message', function(message) {
             if (this[message.type] !== undefined) {
                 this[message.type](message.params);
             } else {
