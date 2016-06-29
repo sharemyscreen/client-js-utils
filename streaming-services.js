@@ -2,7 +2,11 @@
  * Created by fabre_h on 6/28/16.
  */
 
+StreamingServices.Ping = Ping;
+StreamingServices.Text = Text;
+
 class StreamingServices {
+
     constructor(ip, organization_public_id, access_token) {
         this.server_ip = ip;
         this.organization_public_id = organization_public_id;
