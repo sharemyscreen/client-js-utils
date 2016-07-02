@@ -23,7 +23,7 @@ class StreamingServices {
         this.send_message('authentication', { access_token: this.access_token});
         this.socket.on('authenticated', function () {
             console.log('Successfully authenticated to media server');
-            this.run_message_handler();
+            this._run_message_handler();
             window.onbeforeunload = this.socket.disconnect();
         });
         this.socket.on('unauthorized', function (err) {
@@ -35,7 +35,7 @@ class StreamingServices {
         this.socket.emit(message_type, params);
     }
 
-    private run_message_handler() {
+    _run_message_handler() {
         this.socket.on('message', function(message) {
             if (this[message.type] !== undefined) {
                 this[message.type](message.params);
