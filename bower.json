@@ -1,0 +1,26 @@
+{
+  "name": "sharemyscreen-client-utils",
+  "homepage": "https://github.com/sharemyscreen/client-js-utils",
+  "authors": [
+    "Hugo FABRE <hugo.fabre@epitech.eu>"
+  ],
+  "description": "For share my screen web client",
+  "main": "streaming-services.js",
+  "keywords": [
+    "js",
+    "client",
+    "sharemyscreen"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^1.4.8"
+  }
+}

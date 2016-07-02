@@ -5,7 +5,7 @@
 StreamingServices.draw_interaction = function (params) {
     var interaction = params['interaction'];
     params.canvas_context = canvas_context;
-    if (Interaction.is_valid(interaction)) {
+    if (StreamingServices[interaction] !== undefined) {
         var i = new StreamingServices[interaction](params);
         i.show();
     }
