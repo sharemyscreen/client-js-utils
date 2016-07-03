@@ -5,7 +5,7 @@
     "Hugo FABRE <hugo.fabre@epitech.eu>"
   ],
   "description": "For share my screen web client",
-  "main": "streaming-services.js",
+  "main": "media-client.js",
   "keywords": [
     "js",
     "client",
